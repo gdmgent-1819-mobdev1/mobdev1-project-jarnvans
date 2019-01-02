@@ -1,0 +1,28 @@
+body {
+  overflow: auto;
+}
+
+.rooms {
+  &__content {
+    overflow-x: auto;
+    padding: 0 25px;
+    padding-bottom: 100px;
+    &-add{
+      position: fixed;
+      bottom: 108px;
+      right: 25px;
+      z-index: 1;
+      i {
+        display: block;
+        border-radius: 50px;
+        padding: 20.5px 23.5px;
+        background-color: $button-link-like-color;
+        font-size: 30px;
+          color: #fff;
+        &:hover {
+          opacity: 0.8;
+        }
+      }
+    }
+  }
+}

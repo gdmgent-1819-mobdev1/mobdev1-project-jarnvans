@@ -1,0 +1,22 @@
+{{> headerOwner }}
+<div class="page rooms">
+  <div class="rooms__content">
+    {{#if foundDorms}}
+      <div class="rooms__content-rooms">
+        {{#each dorms}}
+          <p>
+            {{this.name}} {{this.userId}}
+          </p>
+        {{/each}}
+      </div>
+    {{else}}
+    <div class="rooms__content-norooms col-xs-12 col-sm-12 col-md-12">
+      <p>Nog geen koten aangemaakt</p>
+    </div>
+    {{/if}}
+    <div class="rooms__content-add">
+      <i href="/owner/rooms/add" class="fas fa-plus"></i>
+    </div>
+  </div>
+</div>
+{{> footer }}
